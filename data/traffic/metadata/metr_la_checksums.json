@@ -1,0 +1,20 @@
+{
+  "files": {
+    "adj_mx.pkl": {
+      "size_bytes": 680459,
+      "sha256": "a35687c6e15aa228dc45027b0ed2a0ea0f4ec78f573deb992c595092d12f61b3"
+    },
+    "distances_la_2012.csv": {
+      "size_bytes": 6393348,
+      "sha256": "a576a2a3e28dbb959be6da22688e24dd1b246b81264595e129147c256cd53de5"
+    },
+    "graph_sensor_ids.txt": {
+      "size_bytes": 1448,
+      "sha256": "3ba026caa2e6263ab0ea54b0fa1b125dbfa7216544cd05313b555e826292b990"
+    },
+    "metr-la.h5": {
+      "size_bytes": 57038056,
+      "sha256": "64784b76d6fb8ec9bff4b6decafb354da2bb37840468fdccee5044e511277c05"
+    }
+  }
+}

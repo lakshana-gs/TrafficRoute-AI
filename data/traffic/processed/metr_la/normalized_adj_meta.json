@@ -1,0 +1,15 @@
+{
+  "dataset": "METR-LA",
+  "num_sensors": 207,
+  "num_supports": 5,
+  "diffusion_order_k": 2,
+  "normalization_formula": "P_f = D_out^{-1} A, P_b = D_in^{-1} A^T",
+  "support_names": [
+    "Identity (order 0)",
+    "P_forward^(1)",
+    "P_forward^(2)",
+    "P_backward^(1)",
+    "P_backward^(2)"
+  ],
+  "extra_metadata": {}
+}

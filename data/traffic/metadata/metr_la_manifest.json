@@ -1,0 +1,45 @@
+{
+  "dataset": "METR-LA",
+  "source_url": "https://raw.githubusercontent.com/liyaguang/DCRNN/master/data/sensor_graph/",
+  "mirror_url": "https://huggingface.co/datasets/jimmygao3218/METRLA/resolve/main/metr-la.h5",
+  "authoritative_publication": "Li et al., Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting (ICLR 2018)",
+  "provider": "Los Angeles County MTA / Caltrans PeMS / USC InfoLab",
+  "license_status": "Open Academic Research / Public Domain (CC-BY compatible)",
+  "download_date_utc": "2026-09-19T09:56:27Z",
+  "raw_files": [
+    "adj_mx.pkl",
+    "distances_la_2012.csv",
+    "graph_sensor_ids.txt",
+    "metr-la.h5"
+  ],
+  "sha256": {
+    "adj_mx.pkl": "a35687c6e15aa228dc45027b0ed2a0ea0f4ec78f573deb992c595092d12f61b3",
+    "distances_la_2012.csv": "a576a2a3e28dbb959be6da22688e24dd1b246b81264595e129147c256cd53de5",
+    "graph_sensor_ids.txt": "3ba026caa2e6263ab0ea54b0fa1b125dbfa7216544cd05313b555e826292b990",
+    "metr-la.h5": "64784b76d6fb8ec9bff4b6decafb354da2bb37840468fdccee5044e511277c05"
+  },
+  "file_sizes_bytes": {
+    "adj_mx.pkl": 680459,
+    "distances_la_2012.csv": 6393348,
+    "graph_sensor_ids.txt": 1448,
+    "metr-la.h5": 57038056
+  },
+  "time_steps": 34272,
+  "sensors": 207,
+  "sampling_minutes": 5,
+  "total_cells": 7094304,
+  "first_timestamp": "2012-03-01 00:00:00",
+  "last_timestamp": "2012-06-27 23:55:00",
+  "continuous_days": 119,
+  "variable": "speed",
+  "unit": "mph",
+  "missing_zeros_count": 575302,
+  "missing_zeros_ratio": 0.08109353,
+  "active_speed_mean_mph": 58.46,
+  "active_speed_median_mph": 63.22,
+  "active_speed_std_mph": 13.02,
+  "adjacency_edges_count": 1722,
+  "adjacency_density": 0.04018764,
+  "synthetic": false,
+  "raw_data_modified": false
+}

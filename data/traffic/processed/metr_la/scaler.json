@@ -1,0 +1,14 @@
+{
+  "method": "StandardScaler",
+  "feature": "traffic_speed",
+  "unit": "km/h",
+  "training_mean": 94.282224,
+  "training_std": 20.63643,
+  "null_val": 0.0,
+  "fitted_at_utc": "2026-09-19T10:04:30.657803+00:00",
+  "source": "METR-LA (Train Split Only, Zero Leakage)",
+  "extra_metadata": {
+    "sensors_count": 207,
+    "train_steps": 23990
+  }
+}

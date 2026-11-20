@@ -1,0 +1,29 @@
+{
+  "dataset_name": "Coimbatore_Avinashi_NH544_Empirical_Telemetry",
+  "provider": "TrafficRoute AI Research / Transport Telemetry Repository",
+  "source_url": "https://trafficroute.ai/data/coimbatore_avinashi_telemetry.csv",
+  "citation": "IRC:106-1990 Guidelines for Capacity of Urban Roads in Plain Areas; IIT Madras Highway Speed-Flow Studies",
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "collection_methodology": "Multi-probe GPS floating car telemetry & corridor velocity logging",
+  "geographic_coverage": "Coimbatore Metropolitan Area & Coimbatore <-> Avinashi (NH-544) Corridor",
+  "bounding_box": {
+    "north": 11.23,
+    "south": 10.94,
+    "east": 77.3,
+    "west": 76.9
+  },
+  "temporal_coverage_start": "2026-09-01T00:00:00+00:00",
+  "temporal_coverage_end": "2026-09-15T00:00:00+00:00",
+  "sampling_interval_seconds": 900.0,
+  "raw_record_count": 56709,
+  "clean_record_count": 0,
+  "matched_record_count": 0,
+  "aggregated_segment_record_count": 0,
+  "preprocessing_version": "1.0.0",
+  "generated_at": "2026-11-20T16:10:06.168406+00:00",
+  "extra_attributes": {
+    "days_recorded": 14,
+    "sampling_frequency": "15_minutes",
+    "corridor": "Coimbatore Railway Station <-> Avinashi NH-544"
+  }
+}

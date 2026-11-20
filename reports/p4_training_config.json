@@ -1,0 +1,43 @@
+{
+  "milestone": "P4.1",
+  "environment": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python_version": "3.13.7",
+    "torch_version": "2.14.0+cpu",
+    "numpy_version": "2.5.3",
+    "device": "cpu",
+    "cuda_available": false
+  },
+  "dataset": {
+    "name": "METR-LA",
+    "h5_path": "data/traffic/raw/metr_la/metr-la.h5",
+    "adj_path": "data/traffic/raw/metr_la/adj_mx.pkl",
+    "speed_unit": "km/h",
+    "conversion_factor_mph_to_kmh": 1.609344,
+    "total_timesteps": 34272,
+    "num_sensors": 207,
+    "history_steps": 12,
+    "horizon_steps": 12,
+    "train_windows": 23967,
+    "val_windows": 5117,
+    "test_windows": 5119
+  },
+  "dcrnn_hyperparameters": {
+    "model_type": "DCRNN",
+    "hidden_dim": 32,
+    "num_layers": 2,
+    "diffusion_order_k": 2,
+    "horizon": 12,
+    "history": 12,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 20,
+    "patience": 5,
+    "random_seed": 42,
+    "clip_grad_norm": 5.0,
+    "teacher_forcing_initial": 0.5,
+    "teacher_forcing_decay": 0.95,
+    "device": "cpu"
+  }
+}

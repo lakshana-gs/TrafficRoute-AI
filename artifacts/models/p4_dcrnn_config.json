@@ -1,0 +1,21 @@
+{
+  "milestone": "P4.1",
+  "architecture": "Diffusion Convolutional Recurrent Neural Network (DCRNN)",
+  "hidden_dim": 32,
+  "num_layers": 2,
+  "diffusion_order_k": 2,
+  "num_supports": 5,
+  "history_steps": 12,
+  "horizon_steps": 12,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "batch_size": 128,
+  "epochs_trained": 20,
+  "best_epoch": 19,
+  "best_val_loss_kmh": 5.4618,
+  "random_seed": 42,
+  "dataset": "METR-LA",
+  "scaler_reference": "data/traffic/processed/metr_la/scaler.json",
+  "graph_reference": "data/traffic/raw/metr_la/adj_mx.pkl",
+  "device": "cpu"
+}

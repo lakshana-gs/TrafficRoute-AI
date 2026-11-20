@@ -1,0 +1,42 @@
+{
+  "api_service": "TomTom Traffic Flow API - Flow Segment Data",
+  "endpoint": "https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json",
+  "queried_corridor": "Coimbatore <-> Avinashi (NH-544), Tamil Nadu",
+  "query_parameters": {
+    "point": "11.0150,76.9830",
+    "unit": "KMPH",
+    "openLr": true,
+    "zoom": 10,
+    "style": "absolute"
+  },
+  "sanitized_response": {
+    "flowSegmentData": {
+      "frc": "FRC1",
+      "currentSpeed": 38,
+      "freeFlowSpeed": 60,
+      "currentTravelTime": 158,
+      "freeFlowTravelTime": 100,
+      "confidence": 0.92,
+      "roadClosure": false,
+      "coordinates": {
+        "coordinate": [
+          {
+            "latitude": 11.014894,
+            "longitude": 76.982862
+          },
+          {
+            "latitude": 11.015052,
+            "longitude": 76.983097
+          },
+          {
+            "latitude": 11.015493,
+            "longitude": 76.983138
+          }
+        ]
+      },
+      "openlr": "C38E2QAAAACnAAAAAP8A",
+      "@version": "flowSegmentDataVersion 4.0.0"
+    }
+  },
+  "sanitization_notice": "Authentication keys, billing tokens, and client IP headers stripped."
+}

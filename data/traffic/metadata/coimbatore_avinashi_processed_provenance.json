@@ -1,0 +1,64 @@
+{
+  "dataset_name": "Coimbatore_Avinashi_NH544_Model_Ready_Traffic",
+  "provider": "TrafficRoute AI Research / Transport Telemetry Repository",
+  "source_url": "https://trafficroute.ai/data/coimbatore_avinashi_telemetry.csv",
+  "citation": "IRC:106-1990; IIT Madras Heterogeneous Highway Speed Studies",
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "collection_methodology": "Multi-probe GPS floating car telemetry & corridor velocity logging",
+  "geographic_coverage": "Coimbatore Metropolitan Area & Coimbatore <-> Avinashi (NH-544) Corridor",
+  "bounding_box": {
+    "north": 11.23,
+    "south": 10.94,
+    "east": 77.3,
+    "west": 76.9
+  },
+  "temporal_coverage_start": "2026-09-01T00:00:00+00:00",
+  "temporal_coverage_end": "2026-09-14T23:45:00+00:00",
+  "sampling_interval_seconds": 900.0,
+  "raw_record_count": 56709,
+  "clean_record_count": 56205,
+  "matched_record_count": 46112,
+  "aggregated_segment_record_count": 35904,
+  "preprocessing_version": "1.0.0",
+  "generated_at": "2026-09-19T09:23:39.394101+00:00",
+  "extra_attributes": {
+    "features_generated": [
+      "segment_id",
+      "time_bucket",
+      "mean_speed_kmh",
+      "median_speed_kmh",
+      "speed_std_kmh",
+      "min_speed_kmh",
+      "max_speed_kmh",
+      "observation_count",
+      "highway_type",
+      "road_name",
+      "road_reference",
+      "coverage_confidence",
+      "hour_ist",
+      "day_of_week_ist",
+      "is_weekend_ist",
+      "time_of_day_bucket",
+      "speed_lag_1",
+      "speed_lag_2",
+      "speed_lag_4",
+      "historical_speed_mean"
+    ],
+    "unique_segments": 303,
+    "train_rows": 25072,
+    "val_rows": 5370,
+    "test_rows": 5462,
+    "train_period": [
+      "2026-09-01T00:00:00+00:00",
+      "2026-09-10T18:45:00+00:00"
+    ],
+    "val_period": [
+      "2026-09-10T19:00:00+00:00",
+      "2026-09-12T21:15:00+00:00"
+    ],
+    "test_period": [
+      "2026-09-12T21:30:00+00:00",
+      "2026-09-14T23:45:00+00:00"
+    ]
+  }
+}

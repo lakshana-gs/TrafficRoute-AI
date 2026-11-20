@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Pytest / Cache
+.pytest_cache/
+cache/
+.cache/
+.coverage
+htmlcov/
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets & Environment variables
+.env
+.env.*
+*.secret
+*.pem
+*.key
+
+# Large datasets exceeding GitHub 100MB limit & heavy raw extracts
+data/processed/coimbatore_avinashi_network.graphml
+data/processed/coimbatore_avinashi_edges.geojson
+data/processed/coimbatore_avinashi_network.bin
+data/raw/coimbatore_avinashi_osm.json
+data/traffic/raw/metr_la/metr-la.h5
+data/traffic/interim/*.csv
+data/traffic/raw/coimbatore_avinashi_corridor_telemetry.csv
+data/traffic/processed/model_ready_traffic_dataset.csv

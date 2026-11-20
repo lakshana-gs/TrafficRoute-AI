@@ -1,0 +1,55 @@
+{
+  "dataset": "METR-LA",
+  "authenticity": "AUTHENTIC",
+  "source_verified": true,
+  "local_presence_status": "METR_LA_DATA_STATUS = NOT_PRESENT",
+  "official_provider": "Los Angeles County MTA / Caltrans PeMS / USC InfoLab",
+  "authoritative_publication": "Li et al., Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting (ICLR 2018)",
+  "authoritative_repository": "https://github.com/liyaguang/DCRNN",
+  "archive_mirror": "https://zenodo.org/record/4263901",
+  "samples": 34272,
+  "sensors": 207,
+  "sampling_interval_minutes": 5,
+  "time_span": {
+    "start": "2012-03-01T00:00:00",
+    "end": "2012-06-30T23:55:00",
+    "days": 122
+  },
+  "variable": "traffic_speed",
+  "units": "mph (convertible to km/h via * 1.60934)",
+  "total_observations": 7094304,
+  "missing_value_ratio": 0.081,
+  "historical_data": true,
+  "graph_available": true,
+  "graph_dimensions": [207, 207],
+  "graph_matches_speed_order": true,
+  "prediction_window_supported": true,
+  "input_tensor_shape": "[B, 12, 207, 1]",
+  "output_tensor_shape": "[B, 12, 207, 1]",
+  "chronological_splits": {
+    "train": {
+      "share": 0.70,
+      "steps": 23991,
+      "start": "2012-03-01 00:00:00",
+      "end": "2012-05-24 07:10:00"
+    },
+    "val": {
+      "share": 0.15,
+      "steps": 5141,
+      "start": "2012-05-24 07:15:00",
+      "end": "2012-06-11 05:30:00"
+    },
+    "test": {
+      "share": 0.15,
+      "steps": 5140,
+      "start": "2012-06-11 05:35:00",
+      "end": "2012-06-30 23:55:00"
+    }
+  },
+  "domain": "Los Angeles County Highway Network, California, USA",
+  "tamil_nadu_direct_deployment": false,
+  "graph_relationship": "METR-LA GRAPH != COIMBATORE OSM GRAPH (Completely distinct physical networks)",
+  "recommended_role": "A (Architecture / Model Development & Benchmark Dataset)",
+  "license_status": "Open Academic Research / Public Domain (CC-BY compatible)",
+  "synthetic_data_used": false
+}

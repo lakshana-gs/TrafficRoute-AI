@@ -1,0 +1,28 @@
+{
+  "dataset_name": "Coimbatore_Avinashi_Pilot_Road_Network",
+  "source": "OpenStreetMap",
+  "source_url": "https://www.openstreetmap.org",
+  "license": "Open Database License (ODbL) 1.0",
+  "license_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+  "extraction_date": "2026-09-19T08:55:31.565017+00:00",
+  "extraction_method": "Overpass API Bounding Box Extraction",
+  "geographic_boundary": {
+    "south": 10.94,
+    "north": 11.23,
+    "west": 76.9,
+    "east": 77.3
+  },
+  "osm_filter": "highway~motorway|trunk|primary|secondary|tertiary|unclassified|residential",
+  "preprocessing_version": "1.0.0",
+  "node_count": 251867,
+  "edge_count": 549919,
+  "extra_metadata": {
+    "corridor": "Coimbatore Metropolitan Area <-> Avinashi (NH-544)",
+    "bounds": {
+      "south": 10.94,
+      "north": 11.23,
+      "west": 76.9,
+      "east": 77.3
+    }
+  }
+}

@@ -1,0 +1,1762 @@
+{
+  "milestone": "P4.1 \u2014 DCRNN Multi-Epoch Training Completion",
+  "dataset": "METR-LA",
+  "speed_unit": "km/h",
+  "graph": {
+    "sensor_count": 207,
+    "adjacency_shape": [
+      207,
+      207
+    ],
+    "is_finite": true,
+    "has_nan": false,
+    "has_inf": false,
+    "min_weight": 0.0,
+    "max_weight": 1.0,
+    "diagonal_min": 1.0,
+    "diagonal_max": 1.0,
+    "is_symmetric": false,
+    "nonzero_edges": 1722,
+    "total_entries": 42849,
+    "density": 0.040188
+  },
+  "split_timestamps": {
+    "train": [
+      "2012-03-01 00:00:00",
+      "2012-05-23 07:05:00"
+    ],
+    "val": [
+      "2012-05-23 07:10:00",
+      "2012-06-10 03:25:00"
+    ],
+    "test": [
+      "2012-06-10 03:30:00",
+      "2012-06-27 23:55:00"
+    ]
+  },
+  "models": {
+    "dcrnn": {
+      "training_duration_seconds": 968.8,
+      "best_epoch": 1,
+      "best_val_loss": 6.1501,
+      "test_overall": {
+        "mae": 6.237,
+        "rmse": 12.2856,
+        "mape": 10.4039
+      },
+      "test_horizons": {
+        "5_min": {
+          "mae": 4.039,
+          "rmse": 6.9596,
+          "mape": 5.9497
+        },
+        "10_min": {
+          "mae": 4.6288,
+          "rmse": 8.5571,
+          "mape": 7.0988
+        },
+        "15_min": {
+          "mae": 5.0711,
+          "rmse": 9.693,
+          "mape": 7.9649
+        },
+        "20_min": {
+          "mae": 5.4611,
+          "rmse": 10.6146,
+          "mape": 8.7317
+        },
+        "25_min": {
+          "mae": 5.8195,
+          "rmse": 11.4065,
+          "mape": 9.4692
+        },
+        "30_min": {
+          "mae": 6.1702,
+          "rmse": 12.1271,
+          "mape": 10.2087
+        },
+        "35_min": {
+          "mae": 6.5044,
+          "rmse": 12.7785,
+          "mape": 10.9233
+        },
+        "40_min": {
+          "mae": 6.8224,
+          "rmse": 13.3735,
+          "mape": 11.6112
+        },
+        "45_min": {
+          "mae": 7.1302,
+          "rmse": 13.9217,
+          "mape": 12.266
+        },
+        "50_min": {
+          "mae": 7.433,
+          "rmse": 14.4473,
+          "mape": 12.909
+        },
+        "55_min": {
+          "mae": 7.7338,
+          "rmse": 14.9431,
+          "mape": 13.5433
+        },
+        "60_min": {
+          "mae": 8.0306,
+          "rmse": 15.4208,
+          "mape": 14.1721
+        }
+      },
+      "sensor_summary": {
+        "num_sensors": 207,
+        "mean_sensor_mae": 6.2685,
+        "median_sensor_mae": 5.8688,
+        "min_sensor_mae": 2.1811,
+        "max_sensor_mae": 12.4431,
+        "std_sensor_mae": 2.4249,
+        "best_performing_sensors": [
+          {
+            "sensor_id": "767495",
+            "index": 183,
+            "mae": 2.1811,
+            "rmse": 4.3312
+          },
+          {
+            "sensor_id": "717595",
+            "index": 203,
+            "mae": 2.3001,
+            "rmse": 4.1207
+          },
+          {
+            "sensor_id": "767455",
+            "index": 107,
+            "mae": 2.3073,
+            "rmse": 3.7589
+          },
+          {
+            "sensor_id": "718076",
+            "index": 105,
+            "mae": 2.3546,
+            "rmse": 3.8534
+          },
+          {
+            "sensor_id": "767585",
+            "index": 92,
+            "mae": 2.3757,
+            "rmse": 4.061
+          }
+        ],
+        "worst_performing_sensors": [
+          {
+            "sensor_id": "718045",
+            "index": 38,
+            "mae": 12.4431,
+            "rmse": 21.7447
+          },
+          {
+            "sensor_id": "717462",
+            "index": 163,
+            "mae": 12.0549,
+            "rmse": 23.3972
+          },
+          {
+            "sensor_id": "773939",
+            "index": 61,
+            "mae": 12.0032,
+            "rmse": 22.8734
+          },
+          {
+            "sensor_id": "717461",
+            "index": 160,
+            "mae": 11.5823,
+            "rmse": 21.1701
+          },
+          {
+            "sensor_id": "717458",
+            "index": 187,
+            "mae": 11.5747,
+            "rmse": 20.2731
+          }
+        ],
+        "sensor_domain_note": "METR-LA loop detectors in Los Angeles County. These IDs do NOT represent Tamil Nadu or Coimbatore road segments."
+      }
+    },
+    "temporal_only_gru": {
+      "training_duration_seconds": 190.85,
+      "best_epoch": 1,
+      "best_val_loss": 6.3223,
+      "test_overall": {
+        "mae": 6.4029,
+        "rmse": 12.6873,
+        "mape": 10.79
+      },
+      "test_horizons": {
+        "5_min": {
+          "mae": 4.1558,
+          "rmse": 7.2189,
+          "mape": 6.3345
+        },
+        "10_min": {
+          "mae": 4.751,
+          "rmse": 8.7698,
+          "mape": 7.5577
+        },
+        "15_min": {
+          "mae": 5.205,
+          "rmse": 9.935,
+          "mape": 8.4477
+        },
+        "20_min": {
+          "mae": 5.6081,
+          "rmse": 10.9068,
+          "mape": 9.2194
+        },
+        "25_min": {
+          "mae": 5.9838,
+          "rmse": 11.7546,
+          "mape": 9.9359
+        },
+        "30_min": {
+          "mae": 6.3469,
+          "rmse": 12.5279,
+          "mape": 10.6349
+        },
+        "35_min": {
+          "mae": 6.6915,
+          "rmse": 13.2241,
+          "mape": 11.3107
+        },
+        "40_min": {
+          "mae": 7.014,
+          "rmse": 13.8493,
+          "mape": 11.9598
+        },
+        "45_min": {
+          "mae": 7.3223,
+          "rmse": 14.4161,
+          "mape": 12.5836
+        },
+        "50_min": {
+          "mae": 7.6259,
+          "rmse": 14.9516,
+          "mape": 13.212
+        },
+        "55_min": {
+          "mae": 7.92,
+          "rmse": 15.4455,
+          "mape": 13.8308
+        },
+        "60_min": {
+          "mae": 8.211,
+          "rmse": 15.9121,
+          "mape": 14.4536
+        }
+      }
+    },
+    "dcrnn_1epoch": {
+      "training_duration_seconds": 968.8,
+      "best_epoch": 1,
+      "best_val_loss": 6.1501,
+      "test_overall": {
+        "mae": 6.237,
+        "rmse": 12.2856,
+        "mape": 10.4039
+      },
+      "test_horizons": {
+        "5_min": {
+          "mae": 4.039,
+          "rmse": 6.9596,
+          "mape": 5.9497
+        },
+        "10_min": {
+          "mae": 4.6288,
+          "rmse": 8.5571,
+          "mape": 7.0988
+        },
+        "15_min": {
+          "mae": 5.0711,
+          "rmse": 9.693,
+          "mape": 7.9649
+        },
+        "20_min": {
+          "mae": 5.4611,
+          "rmse": 10.6146,
+          "mape": 8.7317
+        },
+        "25_min": {
+          "mae": 5.8195,
+          "rmse": 11.4065,
+          "mape": 9.4692
+        },
+        "30_min": {
+          "mae": 6.1702,
+          "rmse": 12.1271,
+          "mape": 10.2087
+        },
+        "35_min": {
+          "mae": 6.5044,
+          "rmse": 12.7785,
+          "mape": 10.9233
+        },
+        "40_min": {
+          "mae": 6.8224,
+          "rmse": 13.3735,
+          "mape": 11.6112
+        },
+        "45_min": {
+          "mae": 7.1302,
+          "rmse": 13.9217,
+          "mape": 12.266
+        },
+        "50_min": {
+          "mae": 7.433,
+          "rmse": 14.4473,
+          "mape": 12.909
+        },
+        "55_min": {
+          "mae": 7.7338,
+          "rmse": 14.9431,
+          "mape": 13.5433
+        },
+        "60_min": {
+          "mae": 8.0306,
+          "rmse": 15.4208,
+          "mape": 14.1721
+        }
+      },
+      "sensor_summary": {
+        "num_sensors": 207,
+        "mean_sensor_mae": 6.2685,
+        "median_sensor_mae": 5.8688,
+        "min_sensor_mae": 2.1811,
+        "max_sensor_mae": 12.4431,
+        "std_sensor_mae": 2.4249,
+        "best_performing_sensors": [
+          {
+            "sensor_id": "767495",
+            "index": 183,
+            "mae": 2.1811,
+            "rmse": 4.3312
+          },
+          {
+            "sensor_id": "717595",
+            "index": 203,
+            "mae": 2.3001,
+            "rmse": 4.1207
+          },
+          {
+            "sensor_id": "767455",
+            "index": 107,
+            "mae": 2.3073,
+            "rmse": 3.7589
+          },
+          {
+            "sensor_id": "718076",
+            "index": 105,
+            "mae": 2.3546,
+            "rmse": 3.8534
+          },
+          {
+            "sensor_id": "767585",
+            "index": 92,
+            "mae": 2.3757,
+            "rmse": 4.061
+          }
+        ],
+        "worst_performing_sensors": [
+          {
+            "sensor_id": "718045",
+            "index": 38,
+            "mae": 12.4431,
+            "rmse": 21.7447
+          },
+          {
+            "sensor_id": "717462",
+            "index": 163,
+            "mae": 12.0549,
+            "rmse": 23.3972
+          },
+          {
+            "sensor_id": "773939",
+            "index": 61,
+            "mae": 12.0032,
+            "rmse": 22.8734
+          },
+          {
+            "sensor_id": "717461",
+            "index": 160,
+            "mae": 11.5823,
+            "rmse": 21.1701
+          },
+          {
+            "sensor_id": "717458",
+            "index": 187,
+            "mae": 11.5747,
+            "rmse": 20.2731
+          }
+        ],
+        "sensor_domain_note": "METR-LA loop detectors in Los Angeles County. These IDs do NOT represent Tamil Nadu or Coimbatore road segments."
+      }
+    },
+    "dcrnn_p4_1": {
+      "checkpoint_path": "artifacts/models/p4_dcrnn_best.pt",
+      "checkpoint_epoch": 6,
+      "val_loss": 5.798844987154007,
+      "training_duration_seconds": 7064.8,
+      "total_epochs_completed": 6,
+      "target_max_epochs": 20,
+      "status": "INCOMPLETE (Interrupted at Epoch 6; validated convergence)",
+      "test_overall": {
+        "mae": 5.8962,
+        "rmse": 11.7699,
+        "mape": 10.0254
+      },
+      "test_horizons": {
+        "5_min": {
+          "mae": 3.8634,
+          "rmse": 6.6976,
+          "mape": 5.6811
+        },
+        "10_min": {
+          "mae": 4.4198,
+          "rmse": 8.2445,
+          "mape": 6.7704
+        },
+        "15_min": {
+          "mae": 4.832,
+          "rmse": 9.3104,
+          "mape": 7.6317
+        },
+        "20_min": {
+          "mae": 5.1949,
+          "rmse": 10.1833,
+          "mape": 8.4048
+        },
+        "25_min": {
+          "mae": 5.5277,
+          "rmse": 10.9338,
+          "mape": 9.1279
+        },
+        "30_min": {
+          "mae": 5.8519,
+          "rmse": 11.6166,
+          "mape": 9.8534
+        },
+        "35_min": {
+          "mae": 6.1592,
+          "rmse": 12.2406,
+          "mape": 10.5575
+        },
+        "40_min": {
+          "mae": 6.4484,
+          "rmse": 12.8116,
+          "mape": 11.2316
+        },
+        "45_min": {
+          "mae": 6.7228,
+          "rmse": 13.3342,
+          "mape": 11.864
+        },
+        "50_min": {
+          "mae": 6.9889,
+          "rmse": 13.8306,
+          "mape": 12.4732
+        },
+        "55_min": {
+          "mae": 7.2471,
+          "rmse": 14.2952,
+          "mape": 13.0645
+        },
+        "60_min": {
+          "mae": 7.4987,
+          "rmse": 14.7397,
+          "mape": 13.6454
+        }
+      },
+      "sensor_summary": {
+        "num_sensors": 207,
+        "mean_sensor_mae": 5.9279,
+        "median_sensor_mae": 5.5317,
+        "min_sensor_mae": 2.1263,
+        "max_sensor_mae": 12.2719,
+        "std_sensor_mae": 2.3236,
+        "best_performing_sensors": [
+          {
+            "sensor_id": "767495",
+            "index": 183,
+            "mae": 2.1263,
+            "rmse": 4.4566
+          },
+          {
+            "sensor_id": "767455",
+            "index": 107,
+            "mae": 2.2227,
+            "rmse": 3.7112
+          },
+          {
+            "sensor_id": "717595",
+            "index": 203,
+            "mae": 2.2419,
+            "rmse": 4.3545
+          },
+          {
+            "sensor_id": "767585",
+            "index": 92,
+            "mae": 2.2747,
+            "rmse": 4.0039
+          },
+          {
+            "sensor_id": "718076",
+            "index": 105,
+            "mae": 2.2864,
+            "rmse": 3.8195
+          }
+        ],
+        "worst_performing_sensors": [
+          {
+            "sensor_id": "718045",
+            "index": 38,
+            "mae": 12.2719,
+            "rmse": 21.9635
+          },
+          {
+            "sensor_id": "717462",
+            "index": 163,
+            "mae": 11.5504,
+            "rmse": 22.6986
+          },
+          {
+            "sensor_id": "773939",
+            "index": 61,
+            "mae": 11.1297,
+            "rmse": 21.6866
+          },
+          {
+            "sensor_id": "717461",
+            "index": 160,
+            "mae": 11.1195,
+            "rmse": 20.4136
+          },
+          {
+            "sensor_id": "717458",
+            "index": 187,
+            "mae": 10.9449,
+            "rmse": 19.6443
+          }
+        ],
+        "sensor_domain_note": "METR-LA loop detectors in Los Angeles County. These IDs do NOT represent Tamil Nadu or Coimbatore road segments."
+      }
+    },
+    "dcrnn_epoch6": {
+      "checkpoint_path": "artifacts/models/p4_dcrnn_best.pt",
+      "checkpoint_epoch": 6,
+      "val_loss": 5.798844987154007,
+      "training_duration_seconds": 7064.8,
+      "total_epochs_completed": 6,
+      "target_max_epochs": 20,
+      "status": "INCOMPLETE (Interrupted at Epoch 6; validated convergence)",
+      "test_overall": {
+        "mae": 5.8962,
+        "rmse": 11.7699,
+        "mape": 10.0254
+      },
+      "test_horizons": {
+        "5_min": {
+          "mae": 3.8634,
+          "rmse": 6.6976,
+          "mape": 5.6811
+        },
+        "10_min": {
+          "mae": 4.4198,
+          "rmse": 8.2445,
+          "mape": 6.7704
+        },
+        "15_min": {
+          "mae": 4.832,
+          "rmse": 9.3104,
+          "mape": 7.6317
+        },
+        "20_min": {
+          "mae": 5.1949,
+          "rmse": 10.1833,
+          "mape": 8.4048
+        },
+        "25_min": {
+          "mae": 5.5277,
+          "rmse": 10.9338,
+          "mape": 9.1279
+        },
+        "30_min": {
+          "mae": 5.8519,
+          "rmse": 11.6166,
+          "mape": 9.8534
+        },
+        "35_min": {
+          "mae": 6.1592,
+          "rmse": 12.2406,
+          "mape": 10.5575
+        },
+        "40_min": {
+          "mae": 6.4484,
+          "rmse": 12.8116,
+          "mape": 11.2316
+        },
+        "45_min": {
+          "mae": 6.7228,
+          "rmse": 13.3342,
+          "mape": 11.864
+        },
+        "50_min": {
+          "mae": 6.9889,
+          "rmse": 13.8306,
+          "mape": 12.4732
+        },
+        "55_min": {
+          "mae": 7.2471,
+          "rmse": 14.2952,
+          "mape": 13.0645
+        },
+        "60_min": {
+          "mae": 7.4987,
+          "rmse": 14.7397,
+          "mape": 13.6454
+        }
+      },
+      "sensor_summary": {
+        "num_sensors": 207,
+        "mean_sensor_mae": 5.9279,
+        "median_sensor_mae": 5.5317,
+        "min_sensor_mae": 2.1263,
+        "max_sensor_mae": 12.2719,
+        "std_sensor_mae": 2.3236,
+        "best_performing_sensors": [
+          {
+            "sensor_id": "767495",
+            "index": 183,
+            "mae": 2.1263,
+            "rmse": 4.4566
+          },
+          {
+            "sensor_id": "767455",
+            "index": 107,
+            "mae": 2.2227,
+            "rmse": 3.7112
+          },
+          {
+            "sensor_id": "717595",
+            "index": 203,
+            "mae": 2.2419,
+            "rmse": 4.3545
+          },
+          {
+            "sensor_id": "767585",
+            "index": 92,
+            "mae": 2.2747,
+            "rmse": 4.0039
+          },
+          {
+            "sensor_id": "718076",
+            "index": 105,
+            "mae": 2.2864,
+            "rmse": 3.8195
+          }
+        ],
+        "worst_performing_sensors": [
+          {
+            "sensor_id": "718045",
+            "index": 38,
+            "mae": 12.2719,
+            "rmse": 21.9635
+          },
+          {
+            "sensor_id": "717462",
+            "index": 163,
+            "mae": 11.5504,
+            "rmse": 22.6986
+          },
+          {
+            "sensor_id": "773939",
+            "index": 61,
+            "mae": 11.1297,
+            "rmse": 21.6866
+          },
+          {
+            "sensor_id": "717461",
+            "index": 160,
+            "mae": 11.1195,
+            "rmse": 20.4136
+          },
+          {
+            "sensor_id": "717458",
+            "index": 187,
+            "mae": 10.9449,
+            "rmse": 19.6443
+          }
+        ],
+        "sensor_domain_note": "METR-LA loop detectors in Los Angeles County. These IDs do NOT represent Tamil Nadu or Coimbatore road segments."
+      }
+    },
+    "dcrnn_epoch9_best": {
+      "checkpoint_path": "artifacts/models/p4_dcrnn_best.pt",
+      "checkpoint_epoch": 9,
+      "val_loss": 5.696607768535614,
+      "training_duration_seconds": 10545.6,
+      "total_epochs_completed": 9,
+      "target_max_epochs": 20,
+      "status": "INCOMPLETE (Interrupted at Epoch 9; ongoing convergence)",
+      "test_overall": {
+        "mae": 5.8031,
+        "rmse": 11.5804,
+        "mape": 9.8204
+      },
+      "test_horizons": {
+        "5_min": {
+          "mae": 3.8235,
+          "rmse": 6.6305,
+          "mape": 5.6086
+        },
+        "10_min": {
+          "mae": 4.381,
+          "rmse": 8.1455,
+          "mape": 6.7088
+        },
+        "15_min": {
+          "mae": 4.7873,
+          "rmse": 9.1788,
+          "mape": 7.5746
+        },
+        "20_min": {
+          "mae": 5.1411,
+          "rmse": 10.0231,
+          "mape": 8.3394
+        },
+        "25_min": {
+          "mae": 5.4612,
+          "rmse": 10.7521,
+          "mape": 9.0322
+        },
+        "30_min": {
+          "mae": 5.771,
+          "rmse": 11.4205,
+          "mape": 9.7162
+        },
+        "35_min": {
+          "mae": 6.0638,
+          "rmse": 12.0345,
+          "mape": 10.3716
+        },
+        "40_min": {
+          "mae": 6.3362,
+          "rmse": 12.5949,
+          "mape": 10.9906
+        },
+        "45_min": {
+          "mae": 6.5957,
+          "rmse": 13.1094,
+          "mape": 11.5677
+        },
+        "50_min": {
+          "mae": 6.8461,
+          "rmse": 13.5978,
+          "mape": 12.1158
+        },
+        "55_min": {
+          "mae": 7.0933,
+          "rmse": 14.0588,
+          "mape": 12.6478
+        },
+        "60_min": {
+          "mae": 7.3369,
+          "rmse": 14.5031,
+          "mape": 13.1719
+        }
+      },
+      "sensor_summary": {
+        "num_sensors": 207,
+        "mean_sensor_mae": 5.835,
+        "median_sensor_mae": 5.4146,
+        "min_sensor_mae": 2.128,
+        "max_sensor_mae": 12.1391,
+        "std_sensor_mae": 2.2881,
+        "best_performing_sensors": [
+          {
+            "sensor_id": "767495",
+            "index": 183,
+            "mae": 2.128,
+            "rmse": 4.3395
+          },
+          {
+            "sensor_id": "767455",
+            "index": 107,
+            "mae": 2.2229,
+            "rmse": 3.601
+          },
+          {
+            "sensor_id": "717595",
+            "index": 203,
+            "mae": 2.2628,
+            "rmse": 4.2363
+          },
+          {
+            "sensor_id": "767585",
+            "index": 92,
+            "mae": 2.2675,
+            "rmse": 3.9235
+          },
+          {
+            "sensor_id": "718076",
+            "index": 105,
+            "mae": 2.3187,
+            "rmse": 3.7777
+          }
+        ],
+        "worst_performing_sensors": [
+          {
+            "sensor_id": "718045",
+            "index": 38,
+            "mae": 12.1391,
+            "rmse": 21.7574
+          },
+          {
+            "sensor_id": "717462",
+            "index": 163,
+            "mae": 11.3343,
+            "rmse": 22.3959
+          },
+          {
+            "sensor_id": "773939",
+            "index": 61,
+            "mae": 10.8988,
+            "rmse": 21.3587
+          },
+          {
+            "sensor_id": "717461",
+            "index": 160,
+            "mae": 10.8599,
+            "rmse": 20.1193
+          },
+          {
+            "sensor_id": "716958",
+            "index": 139,
+            "mae": 10.7593,
+            "rmse": 18.9498
+          }
+        ],
+        "sensor_domain_note": "METR-LA loop detectors in Los Angeles County. These IDs do NOT represent Tamil Nadu or Coimbatore road segments."
+      }
+    },
+    "dcrnn_final_best": {
+      "training_duration_seconds": 29822.56,
+      "total_epochs": 20,
+      "best_epoch": 19,
+      "best_val_loss": 5.4618,
+      "test_overall": {
+        "mae": 5.6009,
+        "rmse": 11.2662,
+        "mape": 9.4898
+      },
+      "test_horizons": {
+        "5_min": {
+          "mae": 3.765,
+          "rmse": 6.5364,
+          "mape": 5.5133
+        },
+        "10_min": {
+          "mae": 4.299,
+          "rmse": 8.0109,
+          "mape": 6.5819
+        },
+        "15_min": {
+          "mae": 4.6836,
+          "rmse": 9.0195,
+          "mape": 7.4143
+        },
+        "20_min": {
+          "mae": 5.0136,
+          "rmse": 9.8303,
+          "mape": 8.1414
+        },
+        "25_min": {
+          "mae": 5.3088,
+          "rmse": 10.5204,
+          "mape": 8.7943
+        },
+        "30_min": {
+          "mae": 5.5904,
+          "rmse": 11.1494,
+          "mape": 9.4261
+        },
+        "35_min": {
+          "mae": 5.8528,
+          "rmse": 11.7238,
+          "mape": 10.0239
+        },
+        "40_min": {
+          "mae": 6.0956,
+          "rmse": 12.2458,
+          "mape": 10.5904
+        },
+        "45_min": {
+          "mae": 6.3248,
+          "rmse": 12.7193,
+          "mape": 11.1183
+        },
+        "50_min": {
+          "mae": 6.5444,
+          "rmse": 13.1681,
+          "mape": 11.6133
+        },
+        "55_min": {
+          "mae": 6.7588,
+          "rmse": 13.5902,
+          "mape": 12.0899
+        },
+        "60_min": {
+          "mae": 6.9743,
+          "rmse": 13.9997,
+          "mape": 12.5705
+        }
+      },
+      "sensor_summary": {
+        "num_sensors": 207,
+        "mean_sensor_mae": 5.6315,
+        "median_sensor_mae": 5.1022,
+        "min_sensor_mae": 1.993,
+        "max_sensor_mae": 11.8987,
+        "std_sensor_mae": 2.2197,
+        "best_performing_sensors": [
+          {
+            "sensor_id": "767495",
+            "index": 183,
+            "mae": 1.993,
+            "rmse": 3.8486
+          },
+          {
+            "sensor_id": "717595",
+            "index": 203,
+            "mae": 2.15,
+            "rmse": 3.947
+          },
+          {
+            "sensor_id": "767455",
+            "index": 107,
+            "mae": 2.1691,
+            "rmse": 3.7176
+          },
+          {
+            "sensor_id": "767585",
+            "index": 92,
+            "mae": 2.1869,
+            "rmse": 3.8729
+          },
+          {
+            "sensor_id": "767454",
+            "index": 108,
+            "mae": 2.206,
+            "rmse": 4.224
+          }
+        ],
+        "worst_performing_sensors": [
+          {
+            "sensor_id": "718045",
+            "index": 38,
+            "mae": 11.8987,
+            "rmse": 21.332
+          },
+          {
+            "sensor_id": "717462",
+            "index": 163,
+            "mae": 10.7559,
+            "rmse": 21.8642
+          },
+          {
+            "sensor_id": "716960",
+            "index": 25,
+            "mae": 10.5935,
+            "rmse": 16.7538
+          },
+          {
+            "sensor_id": "716958",
+            "index": 139,
+            "mae": 10.52,
+            "rmse": 18.5833
+          },
+          {
+            "sensor_id": "773939",
+            "index": 61,
+            "mae": 10.5076,
+            "rmse": 20.8784
+          }
+        ],
+        "sensor_domain_note": "METR-LA loop detectors in Los Angeles County. These IDs do NOT represent Tamil Nadu or Coimbatore road segments."
+      }
+    }
+  },
+  "comparison_table": {
+    "Persistence": {
+      "overall": {
+        "mae": 8.0066,
+        "rmse": 17.5735,
+        "mape": 11.7437
+      },
+      "horizons": {
+        "5_min": {
+          "mae": 4.8113,
+          "rmse": 9.4992,
+          "mape": 6.6082
+        },
+        "10_min": {
+          "mae": 5.6646,
+          "rmse": 11.9165,
+          "mape": 7.9918
+        },
+        "15_min": {
+          "mae": 6.2979,
+          "rmse": 13.5702,
+          "mape": 9.0138
+        },
+        "20_min": {
+          "mae": 6.8621,
+          "rmse": 14.9496,
+          "mape": 9.9198
+        },
+        "25_min": {
+          "mae": 7.3896,
+          "rmse": 16.155,
+          "mape": 10.7651
+        },
+        "30_min": {
+          "mae": 7.9014,
+          "rmse": 17.2565,
+          "mape": 11.5848
+        },
+        "35_min": {
+          "mae": 8.3993,
+          "rmse": 18.2752,
+          "mape": 12.3802
+        },
+        "40_min": {
+          "mae": 8.8746,
+          "rmse": 19.2103,
+          "mape": 13.1483
+        },
+        "45_min": {
+          "mae": 9.3298,
+          "rmse": 20.086,
+          "mape": 13.8612
+        },
+        "50_min": {
+          "mae": 9.7604,
+          "rmse": 20.8644,
+          "mape": 14.5434
+        },
+        "55_min": {
+          "mae": 10.1821,
+          "rmse": 21.6099,
+          "mape": 15.2138
+        },
+        "60_min": {
+          "mae": 10.606,
+          "rmse": 22.3276,
+          "mape": 15.895
+        }
+      }
+    },
+    "Historical Mean": {
+      "overall": {
+        "mae": 6.7713,
+        "rmse": 12.7723,
+        "mape": 12.5416
+      },
+      "horizons": {
+        "5_min": {
+          "mae": 6.7719,
+          "rmse": 12.7725,
+          "mape": 12.5423
+        },
+        "10_min": {
+          "mae": 6.7716,
+          "rmse": 12.7723,
+          "mape": 12.5419
+        },
+        "15_min": {
+          "mae": 6.7714,
+          "rmse": 12.7723,
+          "mape": 12.5418
+        },
+        "20_min": {
+          "mae": 6.7713,
+          "rmse": 12.7723,
+          "mape": 12.5417
+        },
+        "25_min": {
+          "mae": 6.7711,
+          "rmse": 12.7722,
+          "mape": 12.5415
+        },
+        "30_min": {
+          "mae": 6.7714,
+          "rmse": 12.7724,
+          "mape": 12.5419
+        },
+        "35_min": {
+          "mae": 6.7713,
+          "rmse": 12.7724,
+          "mape": 12.5418
+        },
+        "40_min": {
+          "mae": 6.7712,
+          "rmse": 12.7723,
+          "mape": 12.5415
+        },
+        "45_min": {
+          "mae": 6.7711,
+          "rmse": 12.7721,
+          "mape": 12.5414
+        },
+        "50_min": {
+          "mae": 6.7711,
+          "rmse": 12.772,
+          "mape": 12.5413
+        },
+        "55_min": {
+          "mae": 6.771,
+          "rmse": 12.772,
+          "mape": 12.5412
+        },
+        "60_min": {
+          "mae": 6.7711,
+          "rmse": 12.7721,
+          "mape": 12.5413
+        }
+      }
+    },
+    "XGBoost": {
+      "overall": {
+        "mae": 6.6833,
+        "rmse": 12.123,
+        "mape": 11.7243
+      },
+      "horizons": {
+        "5_min": {
+          "mae": 4.0015,
+          "rmse": 6.8195,
+          "mape": 5.9724
+        },
+        "10_min": {
+          "mae": 4.6895,
+          "rmse": 8.4755,
+          "mape": 7.4314
+        },
+        "15_min": {
+          "mae": 5.2334,
+          "rmse": 9.6064,
+          "mape": 8.6087
+        },
+        "20_min": {
+          "mae": 5.7463,
+          "rmse": 10.543,
+          "mape": 9.71
+        },
+        "25_min": {
+          "mae": 6.181,
+          "rmse": 11.3049,
+          "mape": 10.6551
+        },
+        "30_min": {
+          "mae": 6.6125,
+          "rmse": 12.0094,
+          "mape": 11.591
+        },
+        "35_min": {
+          "mae": 7.028,
+          "rmse": 12.6404,
+          "mape": 12.4966
+        },
+        "40_min": {
+          "mae": 7.4307,
+          "rmse": 13.2156,
+          "mape": 13.3446
+        },
+        "45_min": {
+          "mae": 7.808,
+          "rmse": 13.7554,
+          "mape": 14.1621
+        },
+        "50_min": {
+          "mae": 8.1413,
+          "rmse": 14.2096,
+          "mape": 14.827
+        },
+        "55_min": {
+          "mae": 8.4916,
+          "rmse": 14.6812,
+          "mape": 15.5795
+        },
+        "60_min": {
+          "mae": 8.8357,
+          "rmse": 15.1236,
+          "mape": 16.3139
+        }
+      }
+    },
+    "Temporal-Only GRU": {
+      "overall": {
+        "mae": 6.4029,
+        "rmse": 12.6873,
+        "mape": 10.79
+      },
+      "horizons": {
+        "5_min": {
+          "mae": 4.1558,
+          "rmse": 7.2189,
+          "mape": 6.3345
+        },
+        "10_min": {
+          "mae": 4.751,
+          "rmse": 8.7698,
+          "mape": 7.5577
+        },
+        "15_min": {
+          "mae": 5.205,
+          "rmse": 9.935,
+          "mape": 8.4477
+        },
+        "20_min": {
+          "mae": 5.6081,
+          "rmse": 10.9068,
+          "mape": 9.2194
+        },
+        "25_min": {
+          "mae": 5.9838,
+          "rmse": 11.7546,
+          "mape": 9.9359
+        },
+        "30_min": {
+          "mae": 6.3469,
+          "rmse": 12.5279,
+          "mape": 10.6349
+        },
+        "35_min": {
+          "mae": 6.6915,
+          "rmse": 13.2241,
+          "mape": 11.3107
+        },
+        "40_min": {
+          "mae": 7.014,
+          "rmse": 13.8493,
+          "mape": 11.9598
+        },
+        "45_min": {
+          "mae": 7.3223,
+          "rmse": 14.4161,
+          "mape": 12.5836
+        },
+        "50_min": {
+          "mae": 7.6259,
+          "rmse": 14.9516,
+          "mape": 13.212
+        },
+        "55_min": {
+          "mae": 7.92,
+          "rmse": 15.4455,
+          "mape": 13.8308
+        },
+        "60_min": {
+          "mae": 8.211,
+          "rmse": 15.9121,
+          "mape": 14.4536
+        }
+      }
+    },
+    "DCRNN (Spatio-Temporal)": {
+      "overall": {
+        "mae": 6.237,
+        "rmse": 12.2856,
+        "mape": 10.4039
+      },
+      "horizons": {
+        "5_min": {
+          "mae": 4.039,
+          "rmse": 6.9596,
+          "mape": 5.9497
+        },
+        "10_min": {
+          "mae": 4.6288,
+          "rmse": 8.5571,
+          "mape": 7.0988
+        },
+        "15_min": {
+          "mae": 5.0711,
+          "rmse": 9.693,
+          "mape": 7.9649
+        },
+        "20_min": {
+          "mae": 5.4611,
+          "rmse": 10.6146,
+          "mape": 8.7317
+        },
+        "25_min": {
+          "mae": 5.8195,
+          "rmse": 11.4065,
+          "mape": 9.4692
+        },
+        "30_min": {
+          "mae": 6.1702,
+          "rmse": 12.1271,
+          "mape": 10.2087
+        },
+        "35_min": {
+          "mae": 6.5044,
+          "rmse": 12.7785,
+          "mape": 10.9233
+        },
+        "40_min": {
+          "mae": 6.8224,
+          "rmse": 13.3735,
+          "mape": 11.6112
+        },
+        "45_min": {
+          "mae": 7.1302,
+          "rmse": 13.9217,
+          "mape": 12.266
+        },
+        "50_min": {
+          "mae": 7.433,
+          "rmse": 14.4473,
+          "mape": 12.909
+        },
+        "55_min": {
+          "mae": 7.7338,
+          "rmse": 14.9431,
+          "mape": 13.5433
+        },
+        "60_min": {
+          "mae": 8.0306,
+          "rmse": 15.4208,
+          "mape": 14.1721
+        }
+      }
+    },
+    "DCRNN (P4 1-Epoch)": {
+      "overall": {
+        "mae": 6.237,
+        "rmse": 12.2856,
+        "mape": 10.4039
+      },
+      "horizons": {
+        "5_min": {
+          "mae": 4.039,
+          "rmse": 6.9596,
+          "mape": 5.9497
+        },
+        "10_min": {
+          "mae": 4.6288,
+          "rmse": 8.5571,
+          "mape": 7.0988
+        },
+        "15_min": {
+          "mae": 5.0711,
+          "rmse": 9.693,
+          "mape": 7.9649
+        },
+        "20_min": {
+          "mae": 5.4611,
+          "rmse": 10.6146,
+          "mape": 8.7317
+        },
+        "25_min": {
+          "mae": 5.8195,
+          "rmse": 11.4065,
+          "mape": 9.4692
+        },
+        "30_min": {
+          "mae": 6.1702,
+          "rmse": 12.1271,
+          "mape": 10.2087
+        },
+        "35_min": {
+          "mae": 6.5044,
+          "rmse": 12.7785,
+          "mape": 10.9233
+        },
+        "40_min": {
+          "mae": 6.8224,
+          "rmse": 13.3735,
+          "mape": 11.6112
+        },
+        "45_min": {
+          "mae": 7.1302,
+          "rmse": 13.9217,
+          "mape": 12.266
+        },
+        "50_min": {
+          "mae": 7.433,
+          "rmse": 14.4473,
+          "mape": 12.909
+        },
+        "55_min": {
+          "mae": 7.7338,
+          "rmse": 14.9431,
+          "mape": 13.5433
+        },
+        "60_min": {
+          "mae": 8.0306,
+          "rmse": 15.4208,
+          "mape": 14.1721
+        }
+      }
+    },
+    "DCRNN (P4.1 Multi-Epoch, Epoch 6)": {
+      "overall": {
+        "mae": 5.8962,
+        "rmse": 11.7699,
+        "mape": 10.0254
+      },
+      "horizons": {
+        "5_min": {
+          "mae": 3.8634,
+          "rmse": 6.6976,
+          "mape": 5.6811
+        },
+        "10_min": {
+          "mae": 4.4198,
+          "rmse": 8.2445,
+          "mape": 6.7704
+        },
+        "15_min": {
+          "mae": 4.832,
+          "rmse": 9.3104,
+          "mape": 7.6317
+        },
+        "20_min": {
+          "mae": 5.1949,
+          "rmse": 10.1833,
+          "mape": 8.4048
+        },
+        "25_min": {
+          "mae": 5.5277,
+          "rmse": 10.9338,
+          "mape": 9.1279
+        },
+        "30_min": {
+          "mae": 5.8519,
+          "rmse": 11.6166,
+          "mape": 9.8534
+        },
+        "35_min": {
+          "mae": 6.1592,
+          "rmse": 12.2406,
+          "mape": 10.5575
+        },
+        "40_min": {
+          "mae": 6.4484,
+          "rmse": 12.8116,
+          "mape": 11.2316
+        },
+        "45_min": {
+          "mae": 6.7228,
+          "rmse": 13.3342,
+          "mape": 11.864
+        },
+        "50_min": {
+          "mae": 6.9889,
+          "rmse": 13.8306,
+          "mape": 12.4732
+        },
+        "55_min": {
+          "mae": 7.2471,
+          "rmse": 14.2952,
+          "mape": 13.0645
+        },
+        "60_min": {
+          "mae": 7.4987,
+          "rmse": 14.7397,
+          "mape": 13.6454
+        }
+      }
+    },
+    "DCRNN (P4.1 Multi-Epoch, Epoch 9 Best)": {
+      "overall": {
+        "mae": 5.8031,
+        "rmse": 11.5804,
+        "mape": 9.8204
+      },
+      "horizons": {
+        "5_min": {
+          "mae": 3.8235,
+          "rmse": 6.6305,
+          "mape": 5.6086
+        },
+        "10_min": {
+          "mae": 4.381,
+          "rmse": 8.1455,
+          "mape": 6.7088
+        },
+        "15_min": {
+          "mae": 4.7873,
+          "rmse": 9.1788,
+          "mape": 7.5746
+        },
+        "20_min": {
+          "mae": 5.1411,
+          "rmse": 10.0231,
+          "mape": 8.3394
+        },
+        "25_min": {
+          "mae": 5.4612,
+          "rmse": 10.7521,
+          "mape": 9.0322
+        },
+        "30_min": {
+          "mae": 5.771,
+          "rmse": 11.4205,
+          "mape": 9.7162
+        },
+        "35_min": {
+          "mae": 6.0638,
+          "rmse": 12.0345,
+          "mape": 10.3716
+        },
+        "40_min": {
+          "mae": 6.3362,
+          "rmse": 12.5949,
+          "mape": 10.9906
+        },
+        "45_min": {
+          "mae": 6.5957,
+          "rmse": 13.1094,
+          "mape": 11.5677
+        },
+        "50_min": {
+          "mae": 6.8461,
+          "rmse": 13.5978,
+          "mape": 12.1158
+        },
+        "55_min": {
+          "mae": 7.0933,
+          "rmse": 14.0588,
+          "mape": 12.6478
+        },
+        "60_min": {
+          "mae": 7.3369,
+          "rmse": 14.5031,
+          "mape": 13.1719
+        }
+      }
+    },
+    "Temporal-Only GRU (P4)": {
+      "overall": {
+        "mae": 6.4029,
+        "rmse": 12.6873,
+        "mape": 10.79
+      },
+      "horizons": {
+        "5_min": {
+          "mae": 4.1558,
+          "rmse": 7.2189,
+          "mape": 6.3345
+        },
+        "10_min": {
+          "mae": 4.751,
+          "rmse": 8.7698,
+          "mape": 7.5577
+        },
+        "15_min": {
+          "mae": 5.205,
+          "rmse": 9.935,
+          "mape": 8.4477
+        },
+        "20_min": {
+          "mae": 5.6081,
+          "rmse": 10.9068,
+          "mape": 9.2194
+        },
+        "25_min": {
+          "mae": 5.9838,
+          "rmse": 11.7546,
+          "mape": 9.9359
+        },
+        "30_min": {
+          "mae": 6.3469,
+          "rmse": 12.5279,
+          "mape": 10.6349
+        },
+        "35_min": {
+          "mae": 6.6915,
+          "rmse": 13.2241,
+          "mape": 11.3107
+        },
+        "40_min": {
+          "mae": 7.014,
+          "rmse": 13.8493,
+          "mape": 11.9598
+        },
+        "45_min": {
+          "mae": 7.3223,
+          "rmse": 14.4161,
+          "mape": 12.5836
+        },
+        "50_min": {
+          "mae": 7.6259,
+          "rmse": 14.9516,
+          "mape": 13.212
+        },
+        "55_min": {
+          "mae": 7.92,
+          "rmse": 15.4455,
+          "mape": 13.8308
+        },
+        "60_min": {
+          "mae": 8.211,
+          "rmse": 15.9121,
+          "mape": 14.4536
+        }
+      }
+    },
+    "DCRNN (P4.1 Final Best)": {
+      "overall": {
+        "mae": 5.6009,
+        "rmse": 11.2662,
+        "mape": 9.4898
+      },
+      "horizons": {
+        "5_min": {
+          "mae": 3.765,
+          "rmse": 6.5364,
+          "mape": 5.5133
+        },
+        "10_min": {
+          "mae": 4.299,
+          "rmse": 8.0109,
+          "mape": 6.5819
+        },
+        "15_min": {
+          "mae": 4.6836,
+          "rmse": 9.0195,
+          "mape": 7.4143
+        },
+        "20_min": {
+          "mae": 5.0136,
+          "rmse": 9.8303,
+          "mape": 8.1414
+        },
+        "25_min": {
+          "mae": 5.3088,
+          "rmse": 10.5204,
+          "mape": 8.7943
+        },
+        "30_min": {
+          "mae": 5.5904,
+          "rmse": 11.1494,
+          "mape": 9.4261
+        },
+        "35_min": {
+          "mae": 5.8528,
+          "rmse": 11.7238,
+          "mape": 10.0239
+        },
+        "40_min": {
+          "mae": 6.0956,
+          "rmse": 12.2458,
+          "mape": 10.5904
+        },
+        "45_min": {
+          "mae": 6.3248,
+          "rmse": 12.7193,
+          "mape": 11.1183
+        },
+        "50_min": {
+          "mae": 6.5444,
+          "rmse": 13.1681,
+          "mape": 11.6133
+        },
+        "55_min": {
+          "mae": 6.7588,
+          "rmse": 13.5902,
+          "mape": 12.0899
+        },
+        "60_min": {
+          "mae": 6.9743,
+          "rmse": 13.9997,
+          "mape": 12.5705
+        }
+      }
+    }
+  },
+  "missing_data_analysis": {
+    "total_target_observations": 12715596,
+    "valid_observations": 11129243,
+    "masked_observations": 1586353,
+    "masked_percentage": 12.4756,
+    "horizon_missing_breakdown": {
+      "step_5_min": {
+        "valid_count": 927461,
+        "masked_count": 132172,
+        "masked_percent": 12.4734
+      },
+      "step_10_min": {
+        "valid_count": 927458,
+        "masked_count": 132175,
+        "masked_percent": 12.4737
+      },
+      "step_15_min": {
+        "valid_count": 927454,
+        "masked_count": 132179,
+        "masked_percent": 12.474
+      },
+      "step_20_min": {
+        "valid_count": 927450,
+        "masked_count": 132183,
+        "masked_percent": 12.4744
+      },
+      "step_25_min": {
+        "valid_count": 927445,
+        "masked_count": 132188,
+        "masked_percent": 12.4749
+      },
+      "step_30_min": {
+        "valid_count": 927440,
+        "masked_count": 132193,
+        "masked_percent": 12.4754
+      },
+      "step_35_min": {
+        "valid_count": 927435,
+        "masked_count": 132198,
+        "masked_percent": 12.4758
+      },
+      "step_40_min": {
+        "valid_count": 927430,
+        "masked_count": 132203,
+        "masked_percent": 12.4763
+      },
+      "step_45_min": {
+        "valid_count": 927425,
+        "masked_count": 132208,
+        "masked_percent": 12.4768
+      },
+      "step_50_min": {
+        "valid_count": 927420,
+        "masked_count": 132213,
+        "masked_percent": 12.4772
+      },
+      "step_55_min": {
+        "valid_count": 927415,
+        "masked_count": 132218,
+        "masked_percent": 12.4777
+      },
+      "step_60_min": {
+        "valid_count": 927410,
+        "masked_count": 132223,
+        "masked_percent": 12.4782
+      }
+    },
+    "sensor_missing_stats": {
+      "mean_masked_percent": 12.4756,
+      "median_masked_percent": 9.9824,
+      "min_masked_percent": 9.9043,
+      "max_masked_percent": 50.9475
+    }
+  },
+  "critical_domain_limitation": "METR-LA loop detectors in Los Angeles County. These models validate the spatio-temporal ML architecture on authentic traffic data. They do NOT predict Tamil Nadu road traffic or map to Coimbatore OSM segments.",
+  "total_pipeline_duration_seconds": 19344.32
+}

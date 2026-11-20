@@ -1,0 +1,37 @@
+{
+  "provider": "TomTom",
+  "product": "TomTom Traffic Flow API (Flow Segment Data v4)",
+  "api_verified": true,
+  "real_response_received": false,
+  "auth_status": "TOMTOM_API_KEY_REQUIRED",
+  "env_variable_required": "TOMTOM_API_KEY",
+  "geographic_test": "Coimbatore–Avinashi NH-544, Tamil Nadu",
+  "traffic_speed_available": true,
+  "speed_fields_verified": [
+    "currentSpeed",
+    "freeFlowSpeed",
+    "currentTravelTime",
+    "freeFlowTravelTime",
+    "confidence",
+    "frc",
+    "coordinates"
+  ],
+  "historical_data_available": false,
+  "historical_test_result": "HISTORICAL_TRAINING_DATA = NOT_AVAILABLE_FROM_TESTED_API",
+  "historical_analysis": "The developer Flow Segment Data API is strictly a real-time current traffic monitoring service. Past dates or arbitrary historical timestamps cannot be queried. Historical data is gated under the commercial TomTom MOVE / Traffic Stats enterprise service.",
+  "temporal_resolution": "1-minute real-time update cycle; no historical temporal querying parameter",
+  "p1_mapping_possible": true,
+  "mapping_success_rate": 81.8,
+  "spatial_mapping_metrics": {
+    "test_points_count": 11,
+    "mapped_within_75m": 9,
+    "median_distance_meters": 45.07,
+    "p95_distance_meters": 153.37,
+    "max_distance_meters": 225.57
+  },
+  "training_suitability": "B",
+  "training_suitability_explanation": "Classification B: Suitable for real-time inference, live ETA evaluation, and route monitoring, but NOT sufficient as an on-demand historical time-series training dataset for P3 ML models unless polled continuously into the future.",
+  "license_status": "LICENSE_REQUIRES_PROVIDER_CONFIRMATION",
+  "retention_and_ml_restrictions": "Developer evaluation tier permits caching for navigation but restricts permanent bulk storage, redistribution, and competitive model extraction without enterprise agreement.",
+  "synthetic_data_used": false
+}
